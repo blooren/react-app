@@ -1,0 +1,67 @@
+.vertical-buttons {
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transition: opacity 0.5s, background-color 0.5s; */
+    padding: 20px;
+    border-top-left-radius: 1.1rem;;
+    border-bottom-left-radius: 1.1rem;
+    background-color: var(--card-color);
+}
+
+
+.scroll-button, .placeholder-button {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.9rem;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vertical-buttons img{
+    width: 1.6rem;
+}
+
+.api{
+    background-color: #0075FF;
+}
+
+.scroll-button:hover, .placeholder-button:hover {
+    background-color: #0b5ed7;
+}
+.reset{
+    background-color: #E82F2F;
+}
+.reset:hover{
+    background-color: #bb2d3b;
+}
+.top{
+    background-color: #b3b3b3;
+}
+.top:hover{
+    background-color: #4a4a4a;
+}
+.equals{
+    background-color: #000000;
+}
+.equals:hover{
+    background-color: rgba(0, 0, 0, 0.693);
+}
+.darkMode{
+    background-color: var(--bg-color);
+    color: var(--bg-color--text-color);
+}
+.darkMode:hover{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}

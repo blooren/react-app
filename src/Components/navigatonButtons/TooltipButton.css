@@ -1,0 +1,33 @@
+[data-theme='light']{
+    --tooltip-bg: #000000;
+    --tooltip-text: white;
+}
+[data-theme='dark']{
+    --tooltip-bg: #FFFFFF;
+    --tooltip-text: black;
+}
+.tooltip-button {
+    position: relative; /* Ensure position is relative */
+    /* Other button styles */
+}
+
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 1rem;
+    transform: translateX(-40px);
+    background-color: var(--tooltip-bg);
+    color: var(--tooltip-text);
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px; /* Adjust as needed */
+}
+
+.tooltip-button:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+}
